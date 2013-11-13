@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 gem 'jquery-rails', '2.0.2'
 gem 'rails', '3.2.0'
+gem 'devise'
+gem 'possessive'
 
 
 group :development, :test do

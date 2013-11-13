@@ -1,0 +1,13 @@
+<% if @highlight.errors.any? %>
+    <div class="error_messages">
+        <div class="alert alert-danger">
+            <a class="close" data-dismiss="alert">×</a>
+            <h4 class="alert-heading">Warning!</h4>
+            <ul>
+                <% @highlight.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul> 
+        </div><!-- end of alert alert-error-->
+    </div><!-- end of error_messages-->
+<% end %>
